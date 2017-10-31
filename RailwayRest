@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d5fc8626-8aeb-45c4-a309-f1f764dca99f" activeEnvironment="Default" name="REST Project 1" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="9270645f-87b9-400f-b2be-dfc4b5dea93e" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:8080</con:endpoint></con:endpoints><con:resource name="" path="/Railway/resources/getData/wsTest" id="bcc0c0b7-8f96-455d-bdeb-9c755f211277"><con:settings/><con:parameters/><con:method name="1" id="cafab1c9-2fc8-4331-a2c8-56b41241c0a1" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/plain</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="00c788c0-e124-40a7-a1b1-3eef2a3e9c34" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request/><con:originalUri>http://localhost/Railway/resources/getData/wsTest</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="getContactData" path="/Railway/resources/getData/getContactData" id="689e7017-4797-481c-aecf-6b62d06e06a5"><con:settings/><con:parameters/><con:method name="Method 1" id="772866d8-acbe-45e9-890c-5dc3dc208df8" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:get="http://localhost/Railway/resources/getData/getContactData">get:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="784d3246-4ed6-4422-9ec6-5a15406e124b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+    "tokens": [
+        {
+            "tokenRequestId":"abc123thn567",
+			"token":"t1234@example.com",
+            "subscriberKey":"12345abcde67890fghij"
+        },
+        {
+            "tokenRequestId":"abc098thn654",
+			"token":"t5678@example.com",
+            "subscriberKey":"1111155555aAaAabBbBb"
+        }
+    ],
+    "sendKey": "ExampleEmail_12345"
+}</con:request><con:originalUri>http://localhost/Railway/resources/getData/getContactData</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
